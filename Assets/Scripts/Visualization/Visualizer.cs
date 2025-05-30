@@ -71,15 +71,20 @@ namespace SuperPickers {
                 binGO.transform.localScale = new Vector3(bin.width / 100f, bin.height / 100f, bin.depth / 100f);
                 binGO.transform.position = new Vector3(bin.width / 200f, bin.height / 200f, bin.depth / 200f);
 
-                mainCamera.transform.position = new Vector3(bin.width / 200f, bin.height / 200f + 2f, -1.1f);
+                mainCamera.transform.position = new Vector3(bin.width / 200f, bin.height / 200f + 2f, -1.9f);
                 mainCamera.transform.rotation = Quaternion.Euler(40f, 0f, 0f);
 
-                // Sort by product bottom Y
-                // var sortedProducts = container.items.OrderBy(p => p.position[1]).ToList();
-                var sortedItems = ordering.items.OrderBy(p => p.position[1] - (p.height / 2)).ToList();
+                // Sort by product bottom (Y position)
+                // var sortedItems = container.items.OrderBy(item => item.position[1]).ToList();
+                var sortedItems = ordering.items;
+                    /*.OrderBy(item => item.position[1])
+                    .ThenBy(item => item.height)
+                    .ThenBy(item => item.position[0])
+                    .ThenByDescending(item => item.position[2]).ToList();*/
 
                 List<GameObject> itemGOs = new List<GameObject>();
                 foreach (var item in sortedItems) {
+                    Debug.Log(item.name);
                     // TODO: Change material of last item
                     UpdateMaterials(itemGOs);
 
@@ -122,13 +127,12 @@ namespace SuperPickers {
             float elapsed = 0f;
 
             // Make first rotation
-            Quaternion targetRotation = Quaternion.Euler(item.eulerRotations[0].x, item.eulerRotations[0].y, item.eulerRotations[0].z);
+            /*Quaternion targetRotation = Quaternion.Euler(item.eulerRotations[0].x, item.eulerRotations[0].y, item.eulerRotations[0].z);
             AddRotationInstruction(
                 Vector3.zero,
                 new Vector3(item.eulerRotations[0].x, item.eulerRotations[0].y, item.eulerRotations[0].z)
             );
 
-            Vector3 initialPosition = itemGO.transform.position;
             Quaternion initialRotation = itemGO.transform.rotation;
 
             while (elapsed < duration) {
@@ -157,9 +161,10 @@ namespace SuperPickers {
                 yield return null;
             }
 
-            itemGO.transform.rotation = targetRotation;
+            itemGO.transform.rotation = targetRotation;*/
 
             // Move item
+            Vector3 initialPosition = itemGO.transform.position;
             Vector3 targetPosition = CalculateTargetPosition(item);
             AddMoveInstruction(new Vector3(item.position[0], item.position[1], item.position[2]));
             elapsed = 0f;

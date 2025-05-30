@@ -25,7 +25,8 @@ namespace SuperPickers {
         }
 
         public static IEnumerator LoadContent() {
-            UnityWebRequest webRequest = UnityWebRequest.Get("http://127.0.0.1:" + port + "/sample_data.json");
+            // UnityWebRequest webRequest = UnityWebRequest.Get("http://127.0.0.1:" + port + "/sample_data.json");
+            UnityWebRequest webRequest = UnityWebRequest.Get("https://packingi535930.dev004.jpaas.sapbydesign.com/api/orders/visualize");
             yield return webRequest.SendWebRequest();
 
             if (webRequest.result != UnityWebRequest.Result.Success) {

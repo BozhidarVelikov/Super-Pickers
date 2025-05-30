@@ -1,0 +1,202 @@
+[
+  {
+    "bin": {
+      "name": "Box 25",
+      "width": 220,
+      "height": 70,
+      "depth": 140
+    },
+    "items": [
+      {
+        "name": "Shelly 25_1",
+        "width": 47,
+        "height": 43,
+        "depth": 67,
+        "rotation": 3,
+        "position": [0, 0, 0]
+      },
+      {
+        "name": "Shelly 25_2",
+        "width": 47,
+        "height": 43,
+        "depth": 67,
+        "rotation": 3,
+        "position": [43, 0, 0]
+      },
+      {
+        "name": "Shelly 25_3",
+        "width": 47,
+        "height": 43,
+        "depth": 67,
+        "rotation": 3,
+        "position": [86, 0, 0]
+      },
+      {
+        "name": "Shelly 25_4",
+        "width": 47,
+        "height": 43,
+        "depth": 67,
+        "rotation": 3,
+        "position": [129, 0, 0]
+      },
+      {
+        "name": "Shelly 25_5",
+        "width": 47,
+        "height": 43,
+        "depth": 67,
+        "rotation": 3,
+        "position": [172, 0, 0]
+      },
+      {
+        "name": "Shelly 25_6",
+        "width": 47,
+        "height": 43,
+        "depth": 67,
+        "rotation": 3,
+        "position": [0, 0, 47]
+      },
+      {
+        "name": "Shelly 25_7",
+        "width": 47,
+        "height": 43,
+        "depth": 67,
+        "rotation": 3,
+        "position": [43, 0, 47]
+      },
+      {
+        "name": "Shelly 25_8",
+        "width": 47,
+        "height": 43,
+        "depth": 67,
+        "rotation": 3,
+        "position": [86, 0, 47]
+      },
+      {
+        "name": "Shelly 25_9",
+        "width": 47,
+        "height": 43,
+        "depth": 67,
+        "rotation": 3,
+        "position": [129, 0, 47]
+      },
+      {
+        "name": "Shelly 25_10",
+        "width": 47,
+        "height": 43,
+        "depth": 67,
+        "rotation": 3,
+        "position": [172, 0, 47]
+      },
+      {
+        "name": "Shelly 1_1",
+        "width": 63,
+        "height": 28,
+        "depth": 63,
+        "rotation": 4,
+        "position": [0, 0, 94]
+      },
+      {
+        "name": "Shelly 1_2",
+        "width": 63,
+        "height": 28,
+        "depth": 63,
+        "rotation": 4,
+        "position": [63, 0, 94]
+      },
+      {
+        "name": "Shelly 1_3",
+        "width": 63,
+        "height": 28,
+        "depth": 63,
+        "rotation": 4,
+        "position": [126, 0, 94]
+      }
+    ],
+    "efficiency": 0.7826836734693877,
+    "weight": 1.345
+  },
+  {
+    "bin": {
+      "name": "Box 25",
+      "width": 220,
+      "height": 70,
+      "depth": 140
+    },
+    "items": [
+      {
+        "name": "Shelly 1_4",
+        "width": 63,
+        "height": 28,
+        "depth": 63,
+        "rotation": 1,
+        "position": [0, 0, 0]
+      },
+      {
+        "name": "Shelly 1_5",
+        "width": 63,
+        "height": 28,
+        "depth": 63,
+        "rotation": 1,
+        "position": [28, 0, 0]
+      },
+      {
+        "name": "Shelly 3_1",
+        "width": 63,
+        "height": 25,
+        "depth": 63,
+        "rotation": 1,
+        "position": [56, 0, 0]
+      },
+      {
+        "name": "Shelly 3_2",
+        "width": 63,
+        "height": 25,
+        "depth": 63,
+        "rotation": 1,
+        "position": [81, 0, 0]
+      },
+      {
+        "name": "Shelly 3_3",
+        "width": 63,
+        "height": 25,
+        "depth": 63,
+        "rotation": 1,
+        "position": [106, 0, 0]
+      },
+      {
+        "name": "Shelly 3_4",
+        "width": 63,
+        "height": 25,
+        "depth": 63,
+        "rotation": 1,
+        "position": [131, 0, 0]
+      },
+      {
+        "name": "Shelly 3_5",
+        "width": 63,
+        "height": 25,
+        "depth": 63,
+        "rotation": 1,
+        "position": [156, 0, 0]
+      },
+      {
+        "name": "Shelly 3_6",
+        "width": 63,
+        "height": 25,
+        "depth": 63,
+        "rotation": 1,
+        "position": [181, 0, 0]
+      },
+      {
+        "name": "Shelly 3_7",
+        "width": 63,
+        "height": 25,
+        "depth": 63,
+        "rotation": 1,
+        "position": [0, 0, 63]
+      }
+    ],
+    "efficiency": 0.42525,
+    "weight": 0.447
+  }
+]
